@@ -2346,10 +2346,12 @@ label.error {
   -moz-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   -ms-transition: opacity 0.3s;
+  visibility: hidden;
   transition: opacity 0.3s;
   pointer-events: none;
 }
 .popup-visible {
+    visibility: visible !important;
     opacity: 1 !important;
     pointer-events: all !important;
 }
