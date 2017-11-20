@@ -13,45 +13,16 @@
 
 </head>
 <body>
-
-
     <section id="popup-contact" class="vc-container popup-overlay" data-path="/sendMail">
         <div class="popup-wrap-content vc-block">
-            <span class="close">&times;</span>
-
-            <form action="" method="post" class="contact-form m-popup" id="contact-form">
-                <h2>Contact Us</h2>
-                <div class="formblock">
-                    <label for="#name">Name</label>
-                    <input type="text" name="name" placeholder="John Smith">
-                </div>
-                <div class="formblock">
-                    <label for="#email">E-mail</label>
-                    <input type="email" name="email" placeholder="johnsmith@mail.com">
-                </div>
-                <div class="formblock">
-                    <label for="#phone">Phone</label>
-                    <input type="text" name="phone" placeholder="+X XXX NNNN NNN">
-                </div>
-                <div class="formblock">
-                    <label for="#name">Tell us more</label>
-                    <textarea name="more" id="more-info" placeholder="A few words about your project"></textarea>
-                </div>
-                <div class="formblock">
-                    <input type="submit"  value="Send">
-                </div>
-            </form>
-
-            <div class="success-popup"><span class="close">&times;</span>
+            <div class="success-popup"><span class="close" id="close-cross">&times;</span>
                 <h3>Dear Customer!</h3>
                 <p>Thank you for contacting us.</p>
                 <p>We will respond within 24 hours!</p>
-                <p>Best regards,The Mindpark team</p></div>
-
-        </div><!-- /popup-wrap-content-->
-
-    </section><!-- /popup-contact-->
-
+                <p>Best regards, The Mindpark team</p>
+            </div>
+        </div>
+    </section>
 
     <header>
         <div class="wrapper">
@@ -177,7 +148,7 @@
             <p>&copy; 2015 MindPark. All rights reserved.</p>
         </section>
     </footer>
-    <input type="hidden" name="_token" id="csrf-token" value="RuaJ7b00bT4510P2yLkIUTW6fszrqi3yOMmw3cl1" />
 
+    <script src="/js/page-helpers/contact-us.js"></script>
 </body>
 </html>

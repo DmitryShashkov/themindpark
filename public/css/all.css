@@ -1039,10 +1039,6 @@ header nav ul li.active a:hover {
   height: 100%;
 }
 
-.success-popup {
-  display: none;
-}
-
 .banner .title {
   font: 42px/1 'Lato', sans-serif;
   font-weight: 300;
@@ -2345,14 +2341,17 @@ label.error {
   height: 100%;
   min-height: 600px;
   background: rgba(69, 69, 69, 0.94);
-  /*visibility: hidden;*/
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   -ms-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  display: none;
+  pointer-events: none;
+}
+.popup-visible {
+    opacity: 1 !important;
+    pointer-events: all !important;
 }
 
 .popup-overlay {
@@ -3049,4 +3048,14 @@ label.error {
 footer .row {
     display: flex;
     justify-content: center;
+}
+
+input,
+textarea {
+    transition: 0.5s border-color ease-in-out;
+}
+input.invalid,
+textarea.invalid {
+    border-color: #d0021b !important;
+    transition: 0.5s border-color ease-in-out;
 }

@@ -6,7 +6,7 @@ app.use(CORS());
 
 const maintain = new (require('../controllers/maintain'))();
 
-// app.get('/', site.main);
+app.use(require('./routes-api'));
 
 app.use(maintain.process404);
 app.use(maintain.process500);
