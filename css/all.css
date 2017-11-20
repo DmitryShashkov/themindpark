@@ -3043,3 +3043,10 @@ label.error {
     width: 100%;
   }
 }
+
+/* --------------------------------------------------------------- */
+
+footer .row {
+    display: flex;
+    justify-content: center;
+}
