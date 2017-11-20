@@ -26,11 +26,11 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: false }));
 
 app.use(cookieParser());
 
-app.use(express.static(path.join(__dirname, config.server.staticDir)));
-
 if (config.server.useAuth) {
     app.use(maintain.customAuth);
 }
+
+app.use(express.static(path.join(__dirname, config.server.staticDir)));
 
 app.use(router);
 
